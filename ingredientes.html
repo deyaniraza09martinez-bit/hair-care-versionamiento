@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes Naturales | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        /* HERO */
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 80px 30px;
+        }
+
+        .hero h1{
+            color: #e91e63;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            color: #555;
+            font-size: 21px;
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* INGREDIENTES */
+
+        .contenedor{
+            width: 90%;
+            max-width: 1300px;
+            margin: 60px auto;
+        }
+
+        .ingredientes{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            gap: 30px;
+        }
+
+        .card{
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card img{
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            background: #fff3f7;
+            padding: 20px;
+        }
+
+        .contenido{
+            padding: 30px;
+        }
+
+        .contenido h2{
+            color: #e91e63;
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        .contenido p{
+            color: #555;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* BENEFICIOS */
+
+        .beneficios{
+            margin-top: 60px;
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .beneficios h2{
+            color: #e91e63;
+            font-size: 40px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .beneficios ul{
+            padding-left: 30px;
+        }
+
+        .beneficios li{
+            margin-bottom: 18px;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p{
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1{
+                font-size: 40px;
+            }
+
+            .hero p{
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo Hair Care">
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="ingredientes.html" style="color:#e91e63;">
+                Ingredientes
+            </a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>Ingredientes Naturales</h1>
+
+        <p>
+            En Hair Care utilizamos ingredientes naturales y nutritivos
+            que ayudan a fortalecer, hidratar y proteger tu cabello.
+        </p>
+
+    </section>
+
+    <!-- INGREDIENTES -->
+
+    <section class="contenedor">
+
+        <div class="ingredientes">
+
+            <!-- INGREDIENTE 1 -->
+
+            <div class="card">
+
+                <img src="img/shampoo.png.jpeg" alt="Aloe Vera">
+
+                <div class="contenido">
+
+                    <h2>Aloe Vera</h2>
+
+                    <p>
+                        El aloe vera ayuda a hidratar profundamente el cabello,
+                        aporta suavidad y fortalece la fibra capilar.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- INGREDIENTE 2 -->
+
+            <div class="card">
+
+                <img src="img/gel.png.jpeg" alt="Aceite de Coco">
+
+                <div class="contenido">
+
+                    <h2>Aceite de Coco</h2>
+
+                    <p>
+                        Nutre el cabello desde la raíz, reduce el frizz
+                        y aporta brillo natural al cabello.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- INGREDIENTE 3 -->
+
+            <div class="card">
+
+                <img src="img/kit-rizos.png.jpeg" alt="Keratina">
+
+                <div class="contenido">
+
+                    <h2>Keratina</h2>
+
+                    <p>
+                        La keratina fortalece el cabello, ayuda a reparar daños
+                        y mejora la elasticidad capilar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BENEFICIOS -->
+
+        <div class="beneficios">
+
+            <h2>Beneficios de nuestros ingredientes</h2>
+
+            <ul>
+
+                <li>
+                    ✔ Hidratación profunda para cabello seco y maltratado.
+                </li>
+
+                <li>
+                    ✔ Reducción del frizz y mayor definición en rizos.
+                </li>
+
+                <li>
+                    ✔ Fortalecimiento de la fibra capilar.
+                </li>
+
+                <li>
+                    ✔ Mayor brillo y suavidad natural.
+                </li>
+
+                <li>
+                    ✔ Protección contra daños y quiebre del cabello.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

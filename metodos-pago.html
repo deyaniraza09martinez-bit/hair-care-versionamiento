@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Pago | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        .hero h1{
+            font-size: 55px;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .hero p{
+            font-size: 20px;
+            color: #555;
+        }
+
+        .contenedor{
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap: 30px;
+        }
+
+        .card{
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .icono{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .card h2{
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .card p{
+            color: #555;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="metodos_pago.html" style="color:#e91e63;">
+                Métodos de Pago
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>Métodos de Pago</h1>
+
+        <p>
+            Elige el método de pago más cómodo y seguro para ti.
+        </p>
+
+    </section>
+
+    <section class="contenedor">
+
+        <!-- TARJETA -->
+
+        <div class="card">
+
+            <div class="icono">
+                💳
+            </div>
+
+            <h2>Tarjeta de Crédito</h2>
+
+            <p>
+                Aceptamos pagos con Visa, MasterCard y otras tarjetas bancarias.
+            </p>
+
+        </div>
+
+        <!-- NEQUI -->
+
+        <div class="card">
+
+            <div class="icono">
+                📱
+            </div>
+
+            <h2>Nequi</h2>
+
+            <p>
+                Realiza pagos rápidos y seguros desde tu cuenta Nequi.
+            </p>
+
+        </div>
+
+        <!-- DAVIPLATA -->
+
+        <div class="card">
+
+            <div class="icono">
+                💰
+            </div>
+
+            <h2>Daviplata</h2>
+
+            <p>
+                Paga fácilmente utilizando transferencias desde Daviplata.
+            </p>
+
+        </div>
+
+        <!-- CONTRA ENTREGA -->
+
+        <div class="card">
+
+            <div class="icono">
+                🚚
+            </div>
+
+            <h2>Pago Contra Entrega</h2>
+
+            <p>
+                Paga tu pedido al momento de recibirlo en tu domicilio.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

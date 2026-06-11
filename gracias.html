@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gracias por tu compra | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #ffe4ef, #f7f3f8);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .contenedor{
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 50px;
+            border-radius: 35px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .logo{
+            width: 180px;
+            margin-bottom: 25px;
+        }
+
+        .check{
+            width: 120px;
+            height: 120px;
+            background: #e91e63;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin: 0 auto 30px;
+        }
+
+        h1{
+            color: #e91e63;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 22px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .pedido{
+            background: #fff0f6;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+        }
+
+        .pedido h2{
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .pedido p{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .botones{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn{
+            text-decoration: none;
+            padding: 16px 30px;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .inicio{
+            background: linear-gradient(to right, #ff4f93, #e91e63);
+            color: white;
+        }
+
+        .productos{
+            background: #ffe4ef;
+            color: #e91e63;
+        }
+
+        .btn:hover{
+            opacity: 0.9;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size: 40px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+
+            .contenedor{
+                padding: 35px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- LOGO -->
+
+        <img src="img/logo.png" alt="Logo Hair Care" class="logo">
+
+        <!-- CHECK -->
+
+        <div class="check">
+            ✓
+        </div>
+
+        <!-- MENSAJE -->
+
+        <h1>¡Gracias por tu compra!</h1>
+
+        <p>
+            Tu pedido fue realizado exitosamente. 
+            Gracias por confiar en Hair Care para el cuidado de tu cabello.
+        </p>
+
+        <!-- RESUMEN -->
+
+        <div class="pedido">
+
+            <h2>Resumen del pedido</h2>
+
+            <p>
+                Número de pedido: #HC2026
+            </p>
+
+            <p>
+                Productos: Kit de Rizos + Gel Definidor
+            </p>
+
+            <p>
+                Total pagado: $64.000
+            </p>
+
+            <p>
+                Estado: Pago confirmado
+            </p>
+
+        </div>
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <a href="index.html" class="btn inicio">
+                Volver al inicio
+            </a>
+
+            <a href="producto.html" class="btn productos">
+                Seguir comprando
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

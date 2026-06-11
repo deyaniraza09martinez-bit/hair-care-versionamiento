@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil - Hair Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
+
+<body onload="cargarPerfil()">
+
+<!-- HEADER -->
+<header class="header">
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <div class="logo">
+    <img src="img/logo.png" alt="Hair Care">
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="favoritos.html">Favoritos</a>
+  </nav>
+
+  <div class="icons">
+    <span onclick="irCarrito()">🛒 <span id="contador">0</span></span>
+  </div>
+
+</header>
+
+<!-- PERFIL -->
+<div class="form-container">
+
+  <h2>Mi perfil</h2>
+
+  <input 
+    type="text" 
+    id="perfilNombre" 
+    placeholder="Nombre"
+  >
+
+  <input 
+    type="email" 
+    id="perfilCorreo" 
+    placeholder="Correo"
+  >
+
+  <button onclick="guardarPerfil()">Guardar cambios</button>
+
+  <button onclick="window.location.href='index.html'">
+    Volver al inicio
+  </button>
+
+</div>
+
+</body>
+</html>

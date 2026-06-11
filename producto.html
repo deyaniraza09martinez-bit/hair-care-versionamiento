@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos - Hair Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+<header class="header">
+
+  <!-- MENÚ HAMBURGUESA -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="img/logo.png" alt="Hair Care">
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="favoritos.html">Favoritos</a>
+  </nav>
+
+  <!-- CARRITO -->
+  <div class="icons">
+    <span onclick="irCarrito()">
+      🛒 <span id="contador">0</span>
+    </span>
+  </div>
+
+</header>
+
+<!-- =========================
+     CONTENIDO
+========================= -->
+<section class="contenedor">
+
+  <!-- FILTROS -->
+  <aside class="filtros">
+    <h3>Categorías</h3>
+
+    <label>
+      <input type="checkbox" value="shampoo" onchange="filtrar()">
+      Shampoo
+    </label>
+
+    <label>
+      <input type="checkbox" value="rizos" onchange="filtrar()">
+      Rizos
+    </label>
+
+    <label>
+      <input type="checkbox" value="tratamiento" onchange="filtrar()">
+      Tratamiento
+    </label>
+
+    <label>
+      <input type="checkbox" value="color" onchange="filtrar()">
+      Color
+    </label>
+
+  </aside>
+
+  <!-- PRODUCTOS -->
+  <div class="productos">
+
+    <!-- BUSCADOR -->
+    <input 
+      type="text" 
+      id="buscador" 
+      placeholder="Buscar productos..." 
+      onkeyup="buscar()"
+    >
+
+    <!-- LISTA -->
+    <div id="lista-productos" class="grid"></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

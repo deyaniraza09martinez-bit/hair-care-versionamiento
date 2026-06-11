@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Hair Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <div class="logo">
+    <img src="img/logo.png" alt="Hair Care">
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+  </nav>
+
+  <div class="icons">
+    <span onclick="irCarrito()">🛒 <span id="contador">0</span></span>
+  </div>
+
+</header>
+
+<!-- FORMULARIO -->
+<div class="form-container">
+
+  <h2>Iniciar Sesión</h2>
+
+  <input 
+    type="email" 
+    id="loginCorreo" 
+    placeholder="Correo electrónico"
+  >
+
+  <input 
+    type="password" 
+    id="loginPass" 
+    placeholder="Contraseña"
+  >
+
+  <button onclick="login()">Ingresar</button>
+
+  <p style="text-align:center; margin-top:15px;">
+    ¿No tienes cuenta?
+    <a href="registro.html">Regístrate</a>
+  </p>
+
+</div>
+
+</body>
+</html>

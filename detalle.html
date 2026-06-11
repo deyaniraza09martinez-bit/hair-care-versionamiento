@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle Producto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body onload="cargarDetalle()">
+
+<!-- HEADER -->
+<header class="header">
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <div class="logo">
+    <img src="img/logo.png">
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+  </nav>
+
+  <div class="icons">
+    <span onclick="irCarrito()">🛒 <span id="contador">0</span></span>
+  </div>
+
+</header>
+
+<!-- DETALLE -->
+<section class="detalle-container">
+
+  <div class="detalle-card">
+
+    <!-- IMAGEN -->
+    <img id="detalle-img" class="detalle-img">
+
+    <!-- INFO -->
+    <div class="detalle-info">
+      <h2 id="nombre"></h2>
+      <p id="precio"></p>
+
+      <button onclick="agregarCarritoDesdeDetalle()">
+        Agregar al carrito 🛒
+      </button>
+
+      <button onclick="window.location.href='productos.html'">
+        ← Volver
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

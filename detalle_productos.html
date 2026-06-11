@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del Producto | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        .icons{
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon{
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            font-size: 20px;
+        }
+
+        /* CONTENIDO */
+
+        .contenedor{
+            width: 90%;
+            max-width: 1300px;
+            margin: 60px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        /* IMAGEN */
+
+        .imagen-producto{
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .imagen-producto img{
+            width: 100%;
+            max-width: 450px;
+            object-fit: contain;
+        }
+
+        /* INFO */
+
+        .info{
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .categoria{
+            color: #e91e63;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .info h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .precio{
+            color: #e91e63;
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .descripcion{
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .beneficios{
+            margin-bottom: 30px;
+        }
+
+        .beneficios h2{
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .beneficios ul{
+            padding-left: 20px;
+        }
+
+        .beneficios li{
+            margin-bottom: 12px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        /* BOTONES */
+
+        .botones{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn{
+            padding: 16px 30px;
+            border: none;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .carrito{
+            background: linear-gradient(to right, #ff4f93, #e91e63);
+            color: white;
+        }
+
+        .favorito{
+            background: #ffe4ef;
+            color: #e91e63;
+        }
+
+        .btn:hover{
+            opacity: 0.9;
+        }
+
+        /* PRODUCTOS RELACIONADOS */
+
+        .relacionados{
+            width: 90%;
+            max-width: 1300px;
+            margin: 40px auto 80px;
+        }
+
+        .relacionados h2{
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap: 25px;
+        }
+
+        .card{
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card img{
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .card h3{
+            margin: 15px 0;
+            font-size: 25px;
+        }
+
+        .card p{
+            color: #e91e63;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p{
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:900px){
+
+            .contenedor{
+                grid-template-columns: 1fr;
+            }
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .info h1{
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Hair Care">
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <div class="icons">
+
+            <div class="icon">🔍</div>
+            <div class="icon">🛒</div>
+
+        </div>
+
+    </header>
+
+    <!-- PRODUCTO -->
+
+    <section class="contenedor">
+
+        <!-- IMAGEN -->
+
+        <div class="imagen-producto">
+
+            <img src="img/kit-rizos.png.jpeg" alt="Kit de Rizos">
+
+        </div>
+
+        <!-- INFO -->
+
+        <div class="info">
+
+            <p class="categoria">
+                Hair Care / Productos Capilares
+            </p>
+
+            <h1>Kit de Rizos</h1>
+
+            <p class="precio">
+                $42.000
+            </p>
+
+            <p class="descripcion">
+
+                Nuestro Kit de Rizos está diseñado para hidratar, definir y fortalecer el cabello rizado. 
+                Contiene productos especiales que ayudan a reducir el frizz y mantener rizos saludables y brillantes.
+
+            </p>
+
+            <div class="beneficios">
+
+                <h2>Beneficios</h2>
+
+                <ul>
+
+                    <li>✔ Hidratación profunda para el cabello.</li>
+
+                    <li>✔ Define rizos y reduce el frizz.</li>
+
+                    <li>✔ Aporta brillo y suavidad.</li>
+
+                    <li>✔ Ideal para cabello rizado y ondulado.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="botones">
+
+                <button class="btn carrito">
+                    Agregar al carrito
+                </button>
+
+                <button class="btn favorito">
+                    Agregar a favoritos
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RELACIONADOS -->
+
+    <section class="relacionados">
+
+        <h2>Productos relacionados</h2>
+
+        <div class="cards">
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="card">
+
+                <img src="img/shampoo.png.jpeg" alt="Shampoo">
+
+                <h3>Shampoo Hidratante</h3>
+
+                <p>$25.000</p>
+
+                <button class="btn carrito">
+                    Ver producto
+                </button>
+
+            </div>
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="card">
+
+                <img src="img/gel.png.jpeg" alt="Gel">
+
+                <h3>Gel Definidor</h3>
+
+                <p>$22.000</p>
+
+                <button class="btn carrito">
+                    Ver producto
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

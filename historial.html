@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Compras | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        .hero h1{
+            font-size: 55px;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .hero p{
+            color: #555;
+            font-size: 20px;
+        }
+
+        .contenedor{
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .pedido{
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .top h2{
+            color: #e91e63;
+        }
+
+        .estado{
+            background: #ffe4ef;
+            color: #e91e63;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .pedido p{
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .productos{
+            margin-top: 20px;
+        }
+
+        .producto{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            background: #fdf5f8;
+            padding: 15px;
+            border-radius: 18px;
+        }
+
+        .producto img{
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .producto h3{
+            margin-bottom: 8px;
+        }
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="historial.html" style="color:#e91e63;">
+                Historial
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>Historial de Compras</h1>
+
+        <p>
+            Consulta todos tus pedidos realizados en Hair Care.
+        </p>
+
+    </section>
+
+    <section class="contenedor">
+
+        <!-- PEDIDO 1 -->
+
+        <div class="pedido">
+
+            <div class="top">
+
+                <h2>Pedido #HC2026</h2>
+
+                <div class="estado">
+                    Entregado
+                </div>
+
+            </div>
+
+            <p><strong>Fecha:</strong> 15 Abril 2026</p>
+
+            <p><strong>Total:</strong> $64.000</p>
+
+            <div class="productos">
+
+                <div class="producto">
+
+                    <img src="img/kit-rizos.png.jpeg" alt="Kit">
+
+                    <div>
+
+                        <h3>Kit de Rizos</h3>
+
+                        <p>$42.000</p>
+
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="img/gel.png.jpeg" alt="Gel">
+
+                    <div>
+
+                        <h3>Gel Definidor</h3>
+
+                        <p>$22.000</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PEDIDO 2 -->
+
+        <div class="pedido">
+
+            <div class="top">
+
+                <h2>Pedido #HC2027</h2>
+
+                <div class="estado">
+                    En camino
+                </div>
+
+            </div>
+
+            <p><strong>Fecha:</strong> 10 Abril 2026</p>
+
+            <p><strong>Total:</strong> $25.000</p>
+
+            <div class="productos">
+
+                <div class="producto">
+
+                    <img src="img/shampoo.png.jpeg" alt="Shampoo">
+
+                    <div>
+
+                        <h3>Shampoo Hidratante</h3>
+
+                        <p>$25.000</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

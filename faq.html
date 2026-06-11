@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        .icons{
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon{
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            font-size: 20px;
+        }
+
+        /* HERO */
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 80px 40px;
+        }
+
+        .hero h1{
+            color: #e91e63;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            font-size: 22px;
+            color: #555;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* FAQ */
+
+        .contenedor{
+            width: 90%;
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+
+        .faq{
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .faq h2{
+            color: #e91e63;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .faq p{
+            color: #555;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* CONTACTO */
+
+        .contacto{
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .contacto h2{
+            color: #e91e63;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .contacto p{
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(to right, #ff4f93, #e91e63);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p{
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1{
+                font-size: 40px;
+            }
+
+            .hero p{
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Hair Care">
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="faq.html" style="color:#e91e63;">
+                FAQ
+            </a>
+            <a href="contacto.html">Contacto</a>
+            <a href="nosotros.html">Nosotros</a>
+
+        </nav>
+
+        <div class="icons">
+
+            <div class="icon">🔍</div>
+            <div class="icon">🛒</div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>Preguntas Frecuentes</h1>
+
+        <p>
+            Encuentra respuestas rápidas sobre nuestros productos,
+            envíos, pagos y cuidados capilares.
+        </p>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="contenedor">
+
+        <!-- PREGUNTA 1 -->
+
+        <div class="faq">
+
+            <h2>
+                ¿Los productos sirven para cabello rizado?
+            </h2>
+
+            <p>
+                Sí, nuestros productos están diseñados especialmente
+                para hidratar, definir y fortalecer el cabello rizado
+                y ondulado.
+            </p>
+
+        </div>
+
+        <!-- PREGUNTA 2 -->
+
+        <div class="faq">
+
+            <h2>
+                ¿Cuánto tarda el envío?
+            </h2>
+
+            <p>
+                Los envíos pueden tardar entre 3 y 7 días hábiles,
+                dependiendo de tu ubicación.
+            </p>
+
+        </div>
+
+        <!-- PREGUNTA 3 -->
+
+        <div class="faq">
+
+            <h2>
+                ¿Qué métodos de pago aceptan?
+            </h2>
+
+            <p>
+                Aceptamos tarjetas de crédito, Nequi,
+                Daviplata y pago contra entrega.
+            </p>
+
+        </div>
+
+        <!-- PREGUNTA 4 -->
+
+        <div class="faq">
+
+            <h2>
+                ¿Puedo devolver un producto?
+            </h2>
+
+            <p>
+                Sí, aceptamos devoluciones dentro de los primeros
+                5 días después de recibir el pedido.
+            </p>
+
+        </div>
+
+        <!-- PREGUNTA 5 -->
+
+        <div class="faq">
+
+            <h2>
+                ¿Los productos ayudan con el frizz?
+            </h2>
+
+            <p>
+                Sí, nuestros productos ayudan a controlar el frizz
+                y mantener el cabello hidratado y brillante.
+            </p>
+
+        </div>
+
+        <!-- CONTACTO -->
+
+        <div class="contacto">
+
+            <h2>
+                ¿Tienes otra pregunta?
+            </h2>
+
+            <p>
+                Nuestro equipo estará feliz de ayudarte con cualquier duda.
+            </p>
+
+            <a href="contacto.html" class="btn">
+                Contactarnos
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

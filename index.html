@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hair Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+  <!-- MENÚ HAMBURGUESA -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="img/logo.png" alt="Hair Care">
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="nav" id="nav">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="favoritos.html">Favoritos</a>
+  </nav>
+
+  <!-- CARRITO -->
+  <div class="icons">
+    <span onclick="irCarrito()">
+      🛒 <span id="contador">0</span>
+    </span>
+  </div>
+
+</header>
+
+<!-- PORTADA -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hair Care</h1>
+    <p>Cuidado profesional para tu cabello</p>
+
+    <button onclick="window.location.href='productos.html'">
+      Ver productos
+    </button>
+
+    <button onclick="window.location.href='login.html'">
+      Iniciar sesión
+    </button>
+  </div>
+</section>
+
+</body>
+</html>

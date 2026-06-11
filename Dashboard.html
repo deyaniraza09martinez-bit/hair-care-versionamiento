@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            display: flex;
+            background: #f7f3f8;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar{
+            width: 260px;
+            height: 100vh;
+            background: #e91e63;
+            padding: 30px;
+            color: white;
+            position: fixed;
+        }
+
+        .sidebar img{
+            width: 140px;
+            margin-bottom: 40px;
+            background: white;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .sidebar a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover{
+            opacity: 0.8;
+        }
+
+        /* CONTENIDO */
+
+        .contenido{
+            margin-left: 260px;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .titulo{
+            margin-bottom: 40px;
+        }
+
+        .titulo h1{
+            color: #e91e63;
+            font-size: 50px;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 25px;
+        }
+
+        .card{
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h2{
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card p{
+            font-size: 40px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .tabla{
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td{
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th{
+            color: #e91e63;
+        }
+
+        @media(max-width:768px){
+
+            .sidebar{
+                display: none;
+            }
+
+            .contenido{
+                margin-left: 0;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <img src="img/logo.png" alt="Logo">
+
+        <a href="#">Dashboard</a>
+        <a href="#">Productos</a>
+        <a href="#">Pedidos</a>
+        <a href="#">Clientes</a>
+        <a href="#">Ventas</a>
+        <a href="#">Configuración</a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="contenido">
+
+        <div class="titulo">
+
+            <h1>Panel Administrativo</h1>
+
+        </div>
+
+        <!-- CARDS -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2>Ventas Totales</h2>
+
+                <p>$5.2M</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Pedidos</h2>
+
+                <p>320</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Clientes</h2>
+
+                <p>180</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Productos</h2>
+
+                <p>25</p>
+
+            </div>
+
+        </div>
+
+        <!-- TABLA -->
+
+        <div class="tabla">
+
+            <h2 style="margin-bottom:20px; color:#e91e63;">
+                Últimos pedidos
+            </h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Pedido</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th>Estado</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HC2026</td>
+                    <td>María Gómez</td>
+                    <td>Kit de Rizos</td>
+                    <td>Entregado</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HC2027</td>
+                    <td>Laura Pérez</td>
+                    <td>Gel Definidor</td>
+                    <td>En camino</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HC2028</td>
+                    <td>Sofía Ramírez</td>
+                    <td>Shampoo</td>
+                    <td>Procesando</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

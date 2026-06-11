@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Pedido | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        /* HERO */
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1{
+            color: #e91e63;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            font-size: 20px;
+            color: #555;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* CONTENEDOR */
+
+        .contenedor{
+            width: 90%;
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+
+        /* TARJETA */
+
+        .card{
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .card h2{
+            color: #e91e63;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .card p{
+            color: #555;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* ESTADO */
+
+        .estado{
+            margin-top: 40px;
+        }
+
+        .paso{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .circulo{
+            width: 40px;
+            height: 40px;
+            background: #e91e63;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .texto h3{
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .texto p{
+            color: #666;
+        }
+
+        /* BOTON */
+
+        .btn{
+            display: inline-block;
+            margin-top: 30px;
+            background: linear-gradient(to right, #ff4f93, #e91e63);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p{
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1{
+                font-size: 40px;
+            }
+
+            .card{
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Hair Care">
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="seguimiento.html" style="color:#e91e63;">
+                Seguimiento
+            </a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>Seguimiento de Pedido</h1>
+
+        <p>
+            Consulta el estado de tu pedido y conoce en qué etapa se encuentra tu compra.
+        </p>
+
+    </section>
+
+    <!-- CONTENIDO -->
+
+    <section class="contenedor">
+
+        <div class="card">
+
+            <h2>Pedido #HC2026</h2>
+
+            <p>
+                Tu pedido está siendo procesado correctamente. 
+                A continuación puedes ver el estado actual del envío.
+            </p>
+
+            <!-- ESTADOS -->
+
+            <div class="estado">
+
+                <!-- PASO 1 -->
+
+                <div class="paso">
+
+                    <div class="circulo">
+                        ✓
+                    </div>
+
+                    <div class="texto">
+
+                        <h3>Pedido confirmado</h3>
+
+                        <p>
+                            Tu compra fue recibida exitosamente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PASO 2 -->
+
+                <div class="paso">
+
+                    <div class="circulo">
+                        ✓
+                    </div>
+
+                    <div class="texto">
+
+                        <h3>Preparando pedido</h3>
+
+                        <p>
+                            Estamos organizando tus productos Hair Care.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PASO 3 -->
+
+                <div class="paso">
+
+                    <div class="circulo">
+                        3
+                    </div>
+
+                    <div class="texto">
+
+                        <h3>En camino</h3>
+
+                        <p>
+                            Tu pedido será enviado próximamente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PASO 4 -->
+
+                <div class="paso">
+
+                    <div class="circulo">
+                        4
+                    </div>
+
+                    <div class="texto">
+
+                        <h3>Entregado</h3>
+
+                        <p>
+                            Recibirás tu pedido en la dirección registrada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="producto.html" class="btn">
+                Seguir comprando
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

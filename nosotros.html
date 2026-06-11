@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nosotros | Hair Care</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f7f3f8;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header{
+            background: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img{
+            width: 150px;
+        }
+
+        nav{
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #222;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #e91e63;
+        }
+
+        .icons{
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon{
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background: white;
+        }
+
+        /* HERO */
+
+        .hero{
+            background: linear-gradient(to right, #ffe4ef, #f8f3f8);
+            text-align: center;
+            padding: 80px 40px;
+        }
+
+        .hero img{
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1{
+            font-size: 60px;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            max-width: 900px;
+            margin: auto;
+            font-size: 22px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* CONTENIDO */
+
+        .contenedor{
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+        }
+
+        .card{
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .contenido{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .texto{
+            flex: 1;
+        }
+
+        .texto h2{
+            color: #e91e63;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .texto p{
+            font-size: 19px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .imagen{
+            flex: 1;
+            text-align: center;
+        }
+
+        .imagen img{
+            width: 300px;
+            max-width: 100%;
+            border-radius: 20px;
+            background: #fdf5f8;
+            padding: 20px;
+        }
+
+        /* LISTA */
+
+        ul{
+            margin-top: 20px;
+            padding-left: 25px;
+        }
+
+        ul li{
+            margin-bottom: 15px;
+            font-size: 19px;
+            color: #555;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p{
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1{
+                font-size: 40px;
+            }
+
+            .hero p{
+                font-size: 18px;
+            }
+
+            .contenido{
+                flex-direction: column;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Hair Care">
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="nosotros.html" style="color:#e91e63;">Nosotros</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="favoritos.html">Favoritos</a>
+        </nav>
+
+        <div class="icons">
+            <div class="icon">🔍</div>
+            <div class="icon">🛒</div>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <img src="img/logo.png" alt="Logo Hair Care">
+
+        <h1>Nosotros - Hair Care</h1>
+
+        <p>
+            Bienvenidos a Hair Care
+        </p>
+
+    </section>
+
+    <!-- CONTENIDO -->
+
+    <section class="contenedor">
+
+        <!-- BIENVENIDA -->
+
+        <div class="card">
+
+            <div class="contenido">
+
+                <div class="texto">
+
+                    <h2>Bienvenidos a Hair Care</h2>
+
+                    <p>
+                        En Hair Care nos apasiona el cuidado capilar y creemos que cada persona merece lucir un cabello saludable, brillante y lleno de vida. Nuestra tienda está enfocada en ofrecer productos de calidad para el cuidado, hidratación y definición del cabello, especialmente para quienes buscan mantener rizos definidos y un cabello fuerte y saludable.
+                    </p>
+
+                </div>
+
+                <div class="imagen">
+
+                    <img src="img/kit-rizos.png.jpeg" alt="Kit de Rizos">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MISIÓN -->
+
+        <div class="card">
+
+            <div class="contenido">
+
+                <div class="imagen">
+
+                    <img src="img/shampoo.png.jpeg" alt="Shampoo">
+
+                </div>
+
+                <div class="texto">
+
+                    <h2>Nuestra misión</h2>
+
+                    <p>
+                        Nuestra misión es brindar productos capilares de alta calidad que ayuden a las personas a cuidar y fortalecer su cabello, ofreciendo soluciones efectivas para la hidratación, reparación y definición capilar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VISIÓN -->
+
+        <div class="card">
+
+            <div class="contenido">
+
+                <div class="texto">
+
+                    <h2>Nuestra visión</h2>
+
+                    <p>
+                        Ser una marca reconocida por ofrecer productos innovadores y confiables para el cuidado del cabello, destacándonos por la calidad, el compromiso y la satisfacción de nuestros clientes.
+                    </p>
+
+                </div>
+
+                <div class="imagen">
+
+                    <img src="img/gel.png.jpeg" alt="Gel">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VALORES -->
+
+        <div class="card">
+
+            <div class="texto">
+
+                <h2>Nuestros valores</h2>
+
+                <ul>
+
+                    <li>Calidad en cada producto.</li>
+
+                    <li>Compromiso con nuestros clientes.</li>
+
+                    <li>Innovación en el cuidado capilar.</li>
+
+                    <li>Confianza y responsabilidad.</li>
+
+                    <li>Pasión por la belleza y el bienestar.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- POR QUÉ ELEGIR -->
+
+        <div class="card">
+
+            <div class="contenido">
+
+                <div class="imagen">
+
+                    <img src="img/kit-rizos.png.jpeg" alt="Hair Care">
+
+                </div>
+
+                <div class="texto">
+
+                    <h2>¿Por qué elegir Hair Care?</h2>
+
+                    <p>
+                        Porque ofrecemos productos diseñados para cuidar tu cabello de manera efectiva, ayudando a mantenerlo hidratado, fuerte y saludable. Nuestro objetivo es que cada cliente encuentre el producto ideal para su tipo de cabello y necesidades capilares.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COMPROMISO -->
+
+        <div class="card">
+
+            <div class="texto">
+
+                <h2>Nuestro compromiso</h2>
+
+                <p>
+                    En Hair Care trabajamos para ofrecer una experiencia agradable, productos confiables y atención enfocada en el bienestar y cuidado del cabello de nuestros clientes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hair Care | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
